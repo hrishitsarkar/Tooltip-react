@@ -14,3 +14,5 @@ Features
 1. Users can select the buttons in which position they want to see the Tooltip.
 
 2. There is a Hover Me ! button in which users can hover and see the Tooltip.
+
+Use npm run dev to start the server.

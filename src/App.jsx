@@ -9,7 +9,7 @@ function App() {
       <div className="mt-5 p-5 flex flex-wrap items-center justify-between gap-10">
         <button
           value="top"
-          className={position === "top" ? "bg-black text-white" : ""}
+          className={position === "top" ? "bg-black text-white" : "shadow-lg"}
           onClick={(e) => {
             setPosition(e.target.value);
           }}
@@ -18,7 +18,9 @@ function App() {
         </button>
         <button
           value="bottom"
-          className={position === "bottom" ? "bg-black text-white" : ""}
+          className={
+            position === "bottom" ? "bg-black text-white " : "shadow-lg"
+          }
           onClick={(e) => {
             setPosition(e.target.value);
           }}
@@ -27,7 +29,7 @@ function App() {
         </button>
         <button
           value="left"
-          className={position === "left" ? "bg-black text-white" : ""}
+          className={position === "left" ? "bg-black text-white " : "shadow-lg"}
           onClick={(e) => {
             setPosition(e.target.value);
           }}
@@ -36,7 +38,9 @@ function App() {
         </button>
         <button
           value="right"
-          className={position === "right" ? "bg-black text-white" : ""}
+          className={
+            position === "right" ? "bg-black text-white " : "shadow-lg"
+          }
           onClick={(e) => {
             setPosition(e.target.value);
           }}
@@ -47,7 +51,9 @@ function App() {
 
       <div className="flex mt-5 items-center justify-between gap-4">
         <Tooltip position={position}>
-          <button className="text-blue-950 m-10">Hover Me !</button>
+          <button className="text-blue-800 border shadow-lg m-10">
+            Hover Me !
+          </button>
         </Tooltip>
       </div>
     </div>
