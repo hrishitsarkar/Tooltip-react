@@ -1,15 +1,19 @@
 import { useState } from "react";
 import styles from "./Tooltip.module.css";
 const Tooltip = ({ position, children }) => {
+  //Toggler to make the tooltip visible
   const [isVisible, setIsVisible] = useState(false);
+
   return (
     <>
+      {/* changing the toggler on hover */}
       <div
         className="relative transition-all"
         onMouseEnter={() => setIsVisible(true)}
         onMouseLeave={() => setIsVisible(false)}
       >
         {children}
+        {/* if visible, showing the tooltip conditionaly */}
         {isVisible && (
           <>
             <div
@@ -56,4 +60,3 @@ const Tooltip = ({ position, children }) => {
 };
 
 export default Tooltip;
-// ${position}-[calc(-100px-50px)]
